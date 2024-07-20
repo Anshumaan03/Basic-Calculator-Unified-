@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e67f7f;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.77);
+    width: 300px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.transaction-form label {
+    margin-top: 10px;
+}
+
+.transaction-form input, .transaction-form select, .transaction-form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.transaction-form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.totals h2 {
+    margin: 10px 0;
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    background-color: #1bb4db;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #141010;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
