@@ -4,17 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const addIncomeBtn = document.getElementById('add-income');
     const addExpenseBtn = document.getElementById('add-expense');
     const transactionList = document.getElementById('transaction-list');
-    const totalIncomeEl = document.getElementById('total-income');
-    const totalExpenseEl = document.getElementById('total-expense');
-    const netAmountEl = document.getElementById('net-amount');
+    const totalIncome = document.getElementById('total-income');
+    const totalExpense = document.getElementById('total-expense');
+    const netAmount = document.getElementById('net-amount');
 
     let totalIncome = 0;
     let totalExpense = 0;
 
     function updateTotals() {
-        totalIncomeEl.textContent = `$${totalIncome}`;
-        totalExpenseEl.textContent = `$${totalExpense}`;
-        netAmountEl.textContent = `$${totalIncome - totalExpense}`;
+        totalIncome.textContent = `$${totalIncome}`;
+        totalExpense.textContent = `$${totalExpense}`;
+        netAmount.textContent = `$${totalIncome - totalExpense}`;
     }
 
     function addTransaction(type) {
